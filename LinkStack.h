@@ -11,6 +11,7 @@ LinkStack *InitStack ();
 int empty(LinkStack *s);
 void Push(LinkStack *s,dataType x);
 void Pop(LinkStack *s);
+void Conversion(int n,int d);
 dataType GetTop(LinkStack *);
 
 

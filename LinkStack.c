@@ -29,4 +29,16 @@ void Pop(LinkStack *s) {
 dataType GetTop(LinkStack *s) {
 	return s->next->data;
 }
-
+char *c = "0123456789ABCDEF";
+void Conversion(int n,int d) {
+	LinkStack *s = InitStack();
+	while (n) {
+		Push(s,n%d);
+		n /= d;
+	}
+	while (!empty(s)) {
+		printf("%c",c[GetTop(s)]);
+		Pop(s);
+	}
+	printf("\n");
+}
