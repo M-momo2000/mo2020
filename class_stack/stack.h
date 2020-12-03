@@ -1,3 +1,6 @@
+#ifndef stack_h
+#define stack_h
+
 #include<stdio.h>
 #include<malloc.h>
 #include<stdlib.h>
@@ -16,3 +19,5 @@ void push(SeqStack *s,dataType x);
  void pop(SeqStack *s);
 dataType top(SeqStack *s);
 int size (SeqStack *s);
+
+#endif

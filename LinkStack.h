@@ -1,3 +1,6 @@
+#ifndef LinkStack_h
+#define LinkStack_h
+
 #include<stdio.h>
 #include<malloc.h>
 #include<stdlib.h>
@@ -13,6 +16,8 @@ void Push(LinkStack *s,dataType x);
 void Pop(LinkStack *s);
 void Conversion(int n,int d);
 dataType GetTop(LinkStack *);
+
+#endif
 
 
 
